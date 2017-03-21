@@ -32,6 +32,5 @@ public class UITest {
         onView(ViewMatchers.withId(R.id.sample_text))
                 .perform(ViewActions.click())
                 .check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
-
     }
 }
