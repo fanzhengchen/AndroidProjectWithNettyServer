@@ -107,7 +107,7 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
         if (frame instanceof TextWebSocketFrame) {
             // Echo the frame
 
-            TextWebSocketFrame textWebSocketFrame = new TextWebSocketFrame("hahah ");
+            TextWebSocketFrame textWebSocketFrame = new TextWebSocketFrame("taijun");
 
             ctx.write(textWebSocketFrame);
             return;

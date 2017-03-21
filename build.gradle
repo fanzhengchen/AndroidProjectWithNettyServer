@@ -16,8 +16,20 @@ allprojects {
     repositories {
         jcenter()
     }
+
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << '-Xbootclasspath/p:~/.m2/repository/org/mortbay/jetty/alpn/alpn-boot/8.1.9.v20160720'
+        }
+    }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+//tasks.withType(org.gradle.api.tasks.compile.JavaCompile){
+//    doFirst{
+//        if(sourceCompatibility =='1.7' && System.getenv("JAVA_HOME"))
+//    }
+//}

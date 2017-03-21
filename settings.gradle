@@ -1,1 +1,1 @@
-include ':app', ':nettyservers'
+include ':app', ':nettyservers', ':http2'
