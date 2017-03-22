@@ -106,7 +106,7 @@ public class ExampleUnitTest {
 
         Request request = new Request.Builder()
                 .header("accept-encoding", "gzip")
-                .url("https://www.google.com.hk")
+                .url("https://job.alibaba.com/zhaopin/index.htm")
                 .build();
 
         Response response = client.newCall(request).execute();

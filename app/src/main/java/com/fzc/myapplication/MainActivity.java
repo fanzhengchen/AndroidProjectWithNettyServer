@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         Request request = new Request.Builder()
-                .url("https://www.google.com.hk")
+                .url("https://job.alibaba.com/zhaopin/index.htm")
                 .build();
 
         client.newCall(request).enqueue(new Callback() {

@@ -18,6 +18,7 @@ public class Main {
                         Request request = chain.request();
                         System.out.println("Https " + request.isHttps());
                         Response response = chain.proceed(request);
+                        System.out.println(request.url().toString());
                         return response;
                     }
                 })
@@ -25,7 +26,7 @@ public class Main {
 
         Request request = new Request.Builder()
                 .header("accept-encoding", "gzip")
-                .url("https://www.google.com.hk")
+                .url("https://job.alibaba.com/zhaopin/index.htm")
                 .build();
 
         Response response = client.newCall(request).execute();
